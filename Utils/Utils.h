@@ -6,23 +6,23 @@
 const size_t CHIP8FontsSize = 5*16;
 
 namespace Utils {
-    const uint8_t keyButtons[16] {
-        SDLK_0,
-        SDLK_1,
-        SDLK_2,
-        SDLK_3,
-        SDLK_4,
-        SDLK_5,
-        SDLK_6,
-        SDLK_7,
-        SDLK_8,
-        SDLK_9,
-        SDLK_a,
-        SDLK_b,
-        SDLK_c,
-        SDLK_d,
-        SDLK_e,
-        SDLK_f
+    const SDL_Scancode keyButtons[16] {
+        SDL_SCANCODE_1,
+        SDL_SCANCODE_2,
+        SDL_SCANCODE_3,
+        SDL_SCANCODE_4,
+        SDL_SCANCODE_Q,
+        SDL_SCANCODE_W,
+        SDL_SCANCODE_E,
+        SDL_SCANCODE_R,
+        SDL_SCANCODE_A,
+        SDL_SCANCODE_S,
+        SDL_SCANCODE_D,
+        SDL_SCANCODE_F,
+        SDL_SCANCODE_Z,
+        SDL_SCANCODE_X,
+        SDL_SCANCODE_C,
+        SDL_SCANCODE_V
     };
 
     enum class ErrorCode : int{

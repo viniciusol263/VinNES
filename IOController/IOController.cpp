@@ -63,10 +63,10 @@ namespace IOController {
         return Utils::ErrorCode::RETURN_OK;
     }
 
-    SDL_Keycode IOController::GetKeyboardEvent() {
+    SDL_KeyboardEvent IOController::GetKeyboardEvent() {
         SDL_Event event;
         SDL_PollEvent(&event);
-        return event.key.keysym.sym;
+        return event.key;
     }
 
 };

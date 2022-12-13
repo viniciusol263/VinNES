@@ -20,8 +20,10 @@ namespace CPUInterpreter {
       CPUInterpreter();
       ~CPUInterpreter();  
       Utils::ErrorCode FetchOpcode();
+      Utils::ErrorCode UpdateKeyState(SDL_KeyboardEvent keyEvent);
       uint8_t* GetVideoBuffer();
       void tickDelayTimer();
+      void tickSoundTimer();
 
       private:
       uint8_t m_RAM[ramSize];
@@ -36,6 +38,7 @@ namespace CPUInterpreter {
           uint16_t S[0x10]; // Stack
       } m_CpuRegisters;
       uint8_t* m_romData;
+      SDL_KeyboardEvent m_keyEvent;
     };
 }
 

@@ -22,7 +22,7 @@ namespace IOController {
         Utils::ErrorCode SetPixelColor(uint32_t xPos, uint32_t yPos, uint32_t color);
         Utils::ErrorCode SetScreenTexture(uint8_t *pixelBuffer);
         Utils::ErrorCode RenderScreen();
-        SDL_Keycode GetKeyboardEvent();
+        SDL_KeyboardEvent GetKeyboardEvent();
 
         private:
         SDL_Window* m_window;
